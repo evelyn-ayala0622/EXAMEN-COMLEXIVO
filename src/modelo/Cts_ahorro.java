@@ -7,17 +7,17 @@ import modelo.Cts_corriente;
 public class Cts_ahorro extends Cts_corriente{ 
     private double interes; 
      
-    public Cts_ahorro(Cts_jovenes titular, String numCuenta, double saldo, double interes){ 
-        super(titular, numCuenta, saldo); 
+    public Cts_ahorro(Cts_jovenes jovenes, String numCuenta, double saldo, double interes){ 
+        super(jovenes, numCuenta, saldo); 
         this.interes=interes; 
     } 
-    public Cts_ahorro(Cts_jovenes titular, String numCuenta, double interes){ 
-        super(titular, numCuenta); 
+    public Cts_ahorro(Cts_jovenes jovenes, String numCuenta, double interes){ 
+        super(jovenes, numCuenta); 
         setSaldo(15.3); 
         this.interes=interes; 
     } 
-    public Cts_ahorro(Cts_jovenes titular, String numCuenta){ 
-        super(titular, numCuenta); 
+    public Cts_ahorro(Cts_jovenes jovenes, String numCuenta){ 
+        super(jovenes, numCuenta); 
         setSaldo(15.3); 
         this.interes=2.5; 
     } 

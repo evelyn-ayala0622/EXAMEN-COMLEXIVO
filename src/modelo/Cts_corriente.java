@@ -1,22 +1,22 @@
 package modelo;
 
 public class Cts_corriente { 
-    private Cts_jovenes titular; 
+    private Cts_jovenes jovenes; 
     private String numCuenta; 
     private double saldo; 
      
     public Cts_corriente(Cts_jovenes titular, String numCuenta, double saldo){ 
-        this.titular=titular; 
+        this.jovenes=titular; 
         this.numCuenta=numCuenta; 
         this.saldo=saldo; 
     } 
     public Cts_corriente(Cts_jovenes titular, String numCuenta){ 
-        this.titular=titular; 
+        this.jovenes=titular; 
         this.numCuenta=numCuenta; 
         this.saldo=15.3; 
     } 
-    public Cts_jovenes getTitular(){ 
-        return this.titular; 
+    public Cts_jovenes getjoven(){ 
+        return this.jovenes; 
     } 
     public String getNumCuenta(){ 
         return this.numCuenta; 
